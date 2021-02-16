@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="93dp"
+    android:layout_height="110dp"
+    xmlns:card_view="http://schemas.android.com/tools"
+    app:cardElevation="4dp"
+    android:layout_margin="4dp"
+    android:id="@+id/Product_card_id"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="5dp">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/item_Image"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="15dp"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/tshirts" />
+
+        <TextView
+            android:id="@+id/item_Name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Product Name"
+            android:gravity="center"
+            android:textColor="#181717"
+            android:textSize="14sp"
+            android:layout_below="@+id/item_Image"
+            android:layout_marginTop="10dp"
+            />
+
+    </LinearLayout>
+
+
+</android.support.v7.widget.CardView>

@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">EcOMMERCE</string>
+
+
+    <string name="hello">Google LLC is an American multinational technology company
+            that specializes in Internet-related services and products, which include online
+            advertising technologies, a search engine,cloud computing, software, and hardware.
+            When you’re signed in, all of the Google services you use work together seamlessly
+            to offer help with everyday tasks like syncing your Gmail with your Google Calendar
+            and Google Maps to make sure you’re always
+            on top of your schedule</string>
+    <string name="title_activity_drawer">DrawerActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="menu_tools">Tools</string>
+    <string name="menu_share">Share</string>
+    <string name="menu_send">Send</string>
+
+</resources>

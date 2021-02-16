@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/header_background"
+    android:orientation="vertical"
+    tools:context=".Categories">
+
+    <RelativeLayout
+        android:id="@+id/Relative_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="2dp">
+
+        <ImageView
+            android:id="@+id/backero_image"
+            android:layout_width="30dp"
+            android:layout_height="40dp"
+            android:src="@drawable/backero"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="6dp"
+            android:contentDescription="@string/app_name"
+            android:tint="#1A1818" />
+
+        <ImageView
+            android:id="@+id/category_image"
+            android:layout_width="20dp"
+            android:layout_height="40dp"
+            android:src="@drawable/local_bar"
+            android:layout_toLeftOf="@id/notification_image"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:contentDescription="@string/app_name"
+            android:tint="#1A1818" />
+
+        <ImageView
+            android:id="@+id/notification_image"
+            android:layout_width="20dp"
+            android:layout_height="40dp"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/notifications_active"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="20dp"
+            android:contentDescription="@string/app_name"
+            android:tint="#1A1818" />
+
+        <TextView
+            android:id="@+id/textTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Categories"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-condensed-light"
+            android:textColor="#181717"
+            android:gravity="center"
+            android:layout_marginRight="6dp"
+            android:layout_marginTop="10dp"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/Relative_layout"
+        android:layout_marginTop="5dp"
+        android:orientation="vertical"
+        android:background="@drawable/home_layout_background">
+
+        <HorizontalScrollView
+            android:id="@+id/horizontalScrollView"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:fillViewport="true"
+            android:layout_marginTop="30dp"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="6dp"
+                android:backgroundTint="#F2F6F8"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/all_categories"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="All"
+                    android:textSize="15dp"
+                    android:textStyle="bold"
+                    android:padding="10dp"
+                    />
+
+
+                <TextView
+                    android:id="@+id/jeans_categories"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Men's"
+                    android:textSize="15dp"
+                    android:textStyle="bold"
+                    android:padding="10dp" />
+
+
+                <TextView
+                    android:id="@+id/mobile_categories"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Women"
+                    android:textSize="15dp"
+                    android:textStyle="bold"
+                    android:padding="10dp" />
+
+
+                <TextView
+                    android:id="@+id/watch_categories"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Kids"
+                    android:textSize="15dp"
+                    android:textStyle="bold"
+                    android:padding="10dp" />
+
+
+                <TextView
+                    android:id="@+id/laptop_categories"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sports"
+                    android:textSize="15dp"
+                    android:textStyle="bold"
+                    android:padding="10dp" />
+
+
+                <TextView
+                    android:id="@+id/bag_categories"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Technology"
+                    android:textSize="15dp"
+                    android:textStyle="bold"
+                    android:padding="10dp" />
+
+
+                <TextView
+                    android:id="@+id/shoe_categories"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Laptop"
+                    android:textSize="15dp"
+                    android:textStyle="bold"
+                    android:padding="10dp" />
+
+
+                <TextView
+                    android:id="@+id/sunglass_categories"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="SunGlass"
+                    android:textSize="15dp"
+                    android:textStyle="bold"
+                    android:padding="10dp" />
+
+
+                <TextView
+                    android:id="@+id/headphone_categories"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="HeadPhone"
+                    android:textSize="15dp"
+                    android:textStyle="bold"
+                    android:padding="10dp" />
+            </LinearLayout>
+        </HorizontalScrollView>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/category_recyclr_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none"
+            android:layout_below="@+id/bestSeller_More_btn"
+            android:layout_margin="6dp">
+        </android.support.v7.widget.RecyclerView>
+
+    </LinearLayout>
+</LinearLayout>
+

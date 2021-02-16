@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/header_background"
+    android:orientation="vertical"
+    tools:context=".ProductDetails">
+
+    <RelativeLayout
+        android:id="@+id/Relative_PImage_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="2dp">
+
+        <ImageView
+            android:id="@+id/backero_Pdetails_image"
+            android:layout_width="30dp"
+            android:layout_height="40dp"
+            android:src="@drawable/backero"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="6dp"
+            android:contentDescription="@string/app_name"
+            android:tint="#1A1818" />
+
+        <ImageView
+            android:id="@+id/notification_Pdetails_image"
+            android:layout_width="20dp"
+            android:layout_height="40dp"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/notifications_active"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="18dp"
+            android:contentDescription="@string/app_name"
+            android:tint="#1A1818" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/laptops"
+            android:id="@+id/product_Image_details"
+            android:layout_below="@+id/notification_Pdetails_image"
+            android:layout_centerInParent="true"
+            />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/Relative_Details_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/Relative_layout"
+        android:layout_marginTop="5dp"
+        android:orientation="vertical"
+        android:background="@drawable/home_layout_background">
+
+        <TextView
+            android:id="@+id/Pname_details_Id"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="14dp"
+            android:text="Xs4bgd"
+            android:textSize="16sp"
+            android:textColor="#F3DD16"
+            />
+        <ImageView
+            android:id="@+id/love_Pdetails_image"
+            android:layout_width="30dp"
+            android:layout_height="40dp"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/love"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="18dp"
+            android:contentDescription="@string/app_name"/>
+
+
+        <TextView
+            android:id="@+id/title_Pdetails_id"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="14dp"
+            android:text="Laptop Hp"
+            android:layout_below="@+id/love_Pdetails_image"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#1B1B1A"/>
+
+        <RatingBar
+            android:id="@+id/rating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/title_Pdetails_id"
+            style = "?android:attr/ratingBarStyleIndicator"
+            android:layout_marginLeft="14dp"
+            android:numStars="5"
+            android:rating="3"
+            android:isIndicator="false"
+            app:layout_constraintVertical_bias="0.634"
+            android:progressTint="#E7D00E"
+            android:stepSize="1" />
+
+        <TextView
+            android:id="@+id/ColorChooser_Pdetails"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:layout_below="@+id/rating"
+            android:layout_marginTop="10dp"
+            android:text="Color"
+            android:layout_marginLeft="14dp"
+            android:textSize="15sp"
+            android:textColor="#423939"
+            />
+
+        <TextView
+            android:id="@+id/Size_Pdetails"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:layout_below="@+id/rating"
+            android:layout_marginTop="2dp"
+            android:layout_marginRight="40dp"
+            android:text="Size"
+            android:layout_alignParentEnd="true"
+            android:textSize="15sp"
+            android:textColor="#423939"
+            />
+
+        <com.thebluealliance.spectrum.SpectrumPalette
+            android:id="@+id/palette"
+            android:layout_below="@id/Size_Pdetails"
+            android:layout_marginTop="2dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:splitMotionEvents="true"
+
+            app:spectrum_colors="@array/demo_colors"/>
+
+        <TextView
+            android:id="@+id/product_description"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginLeft="14dp"
+            android:layout_below="@+id/palette"
+            android:layout_marginTop="3dp"
+            android:text="Product Description"
+            android:layout_alignParentStart="true"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="#0F0F0F"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/product_description"
+            android:layout_marginLeft="14dp"
+            android:text="@string/hello"/>
+
+       <Button
+           android:layout_width="200dp"
+           android:layout_height="wrap_content"
+           android:background="@drawable/btn_circle"
+           android:clickable="true"
+           android:fontFamily="sans-serif-condensed-light"
+           android:text="Add To Cart"
+           android:backgroundTint="#0F0F0F"
+           android:textAllCaps="false"
+           android:layout_alignParentBottom="true"
+           android:textColor="@android:color/white"
+           android:textSize="15sp"
+           android:layout_centerInParent="true"
+           android:textStyle="bold"
+           />
+
+    </RelativeLayout>
+
+</LinearLayout>
+

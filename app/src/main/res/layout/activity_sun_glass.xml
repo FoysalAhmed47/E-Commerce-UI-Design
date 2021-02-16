@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/header_background"
+    tools:context=".ShowAllActivity">
+
+    <RelativeLayout
+        android:id="@+id/Relative_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="2dp">
+
+        <ImageView
+            android:id="@+id/backero_image"
+            android:layout_width="30dp"
+            android:layout_height="40dp"
+            android:src="@drawable/backero"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="6dp"
+            android:contentDescription="@string/app_name"
+            android:tint="#1A1818" />
+
+
+        <TextView
+            android:id="@+id/textTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="SunGlass"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-condensed-light"
+            android:textColor="#181717"
+            android:gravity="center"
+            android:layout_marginRight="6dp"
+            android:layout_marginTop="10dp"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/Relative_layout"
+        android:padding="5dp"
+        android:background="@drawable/home_layout_background">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/sunglass_recyclerview_id"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="6dp">
+        </android.support.v7.widget.RecyclerView>
+    </LinearLayout>
+
+</LinearLayout>

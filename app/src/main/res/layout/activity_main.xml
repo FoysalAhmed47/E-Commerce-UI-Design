@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawerLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:openDrawer="start"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/ParentLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/header_background"
+        >
+
+        <RelativeLayout
+            android:id="@+id/layoutToolBar"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:paddingStart="15dp"
+            android:paddingEnd="15dp">
+
+            <ImageView
+                android:id="@+id/imageMenu"
+                android:layout_width="30dp"
+                android:layout_height="40dp"
+                android:src="@drawable/menu"
+                android:layout_marginTop="5dp"
+                android:contentDescription="@string/app_name"
+                android:tint="#1A1818" />
+
+            <TextView
+                android:id="@+id/textTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Home"
+                android:textStyle="bold"
+                android:fontFamily="sans-serif-condensed-light"
+                android:textColor="#181717"
+                android:gravity="center"
+                android:layout_marginTop="9dp"
+                android:textSize="18sp" />
+
+            <RelativeLayout
+                android:id="@+id/searchBar_home_id"
+                android:layout_below="@id/textTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="17dp"
+                    android:background="@drawable/white_reclangle_background"
+                    android:hint="Search Here"
+                    android:imeOptions="actionSearch"
+                    android:inputType="text"
+                    android:textColorHint="#5E5959"
+                    android:padding="10dp"
+                    android:paddingStart="10dp"
+                    android:paddingEnd="10dp"
+                    android:textSize="15sp"
+                    android:textStyle="normal" />
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/search_icon_background"
+                    android:src="@drawable/search" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/layoutToolBar"
+            android:orientation="vertical"
+            android:background="@drawable/home_layout_background">
+
+            <ImageView
+                android:layout_width="230dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:src="@drawable/applogo"
+                />
+
+            <HorizontalScrollView
+                android:id="@+id/horizontalScrollView"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:fillViewport="true"
+                android:scrollbars="none"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#F2F6F8"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/t_shirt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="T-Shirt"
+                        android:textSize="15dp"
+                        android:textStyle="bold"
+                        android:padding="10dp"
+                  />
+
+
+                    <TextView
+                        android:id="@+id/jeans"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Jeans"
+                        android:textSize="15dp"
+                        android:textStyle="bold"
+                        android:padding="10dp" />
+
+
+                    <TextView
+                        android:id="@+id/mobile"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Mobile"
+                        android:textSize="15dp"
+                        android:textStyle="bold"
+                        android:padding="10dp" />
+
+
+                    <TextView
+                        android:id="@+id/watch"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Watch"
+                        android:textSize="15dp"
+                        android:textStyle="bold"
+                        android:padding="10dp" />
+
+
+                    <TextView
+                        android:id="@+id/laptop"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Laptop"
+                        android:textSize="15dp"
+                        android:textStyle="bold"
+                        android:padding="10dp" />
+
+
+                    <TextView
+                        android:id="@+id/bag"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Bag"
+                        android:textSize="15dp"
+                        android:textStyle="bold"
+                        android:padding="10dp" />
+
+
+                    <TextView
+                        android:id="@+id/shoe"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Shoe"
+                        android:textSize="15dp"
+                        android:textStyle="bold"
+                        android:padding="10dp" />
+
+
+                    <TextView
+                        android:id="@+id/sunglass"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="SunGlass"
+                        android:textSize="15dp"
+                        android:textStyle="bold"
+                        android:padding="10dp" />
+
+
+                    <TextView
+                        android:id="@+id/headphone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="HeadPhone"
+                        android:textSize="15dp"
+                        android:textStyle="bold"
+                        android:padding="10dp" />
+
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp">
+
+                <TextView
+                    android:id="@+id/txt_newCollection"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="New Collection"
+                    android:fontFamily="sans-serif-condensed-light"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:textStyle="bold"
+                    android:textColor="#181717"
+                    android:textSize="17sp" />
+
+                <Button
+                    android:id="@+id/newCollection_more_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginRight="5dp"
+                    android:layout_alignParentTop="true"
+                    android:backgroundTint="#FFFFFF"
+                    android:text="Show All"
+                    android:textColor="#555151"
+                    android:textAllCaps="false"
+                    android:textSize="13sp"
+                    android:fontFamily="sans-serif-condensed-light"
+                    android:textStyle="bold"
+                    />
+
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/newCollection_recyclr_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:scrollbars="none"
+                    android:layout_marginTop="4dp"
+                    android:layout_margin="6dp"
+                    android:layout_below="@+id/newCollection_more_btn"
+                   >
+                </android.support.v7.widget.RecyclerView>
+
+                <TextView
+                    android:id="@+id/txt_BestSeller"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="Best Seller"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="7dp"
+                    android:fontFamily="sans-serif-condensed-light"
+                    android:textStyle="bold"
+                    android:layout_below="@+id/newCollection_recyclr_view"
+                    android:textColor="#181717"
+                    android:textSize="17sp" />
+
+                <Button
+                    android:id="@+id/bestSeller_More_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_alignParentEnd="true"
+                    android:text="Show All"
+                    android:fontFamily="sans-serif-condensed-light"
+                    android:textStyle="bold"
+                    android:textSize="13sp"
+                    android:layout_marginRight="5dp"
+                    android:layout_below="@+id/newCollection_recyclr_view"
+                    android:textAllCaps="false"
+                    android:textColor="#555151"
+                    android:backgroundTint="#FFFFFF"/>
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/bestSeller_recyclr_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:scrollbars="none"
+                    android:layout_below="@+id/bestSeller_More_btn"
+                    android:layout_marginTop="3dp"
+                    android:layout_margin="6dp">
+                </android.support.v7.widget.RecyclerView>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <android.support.design.widget.NavigationView
+        android:id="@+id/navigationView"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:fitsSystemWindows="true"
+        android:background="@drawable/header_background"
+        app:headerLayout="@layout/nav_header_home"
+        app:menu="@menu/activity_home_drawer" />
+
+</android.support.v4.widget.DrawerLayout>

@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "702909369489",
+    "project_id": "worldtech-5ec4d",
+    "storage_bucket": "worldtech-5ec4d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:702909369489:android:af0c86769514535b9a8330",
+        "android_client_info": {
+          "package_name": "com.example.ecommerce"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "702909369489-550rcm3j803emjn0t8qaoolj33a3u9pl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC-4-nkjZtVCgOb_6BVnJ1aCJWvBvuK3E4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "702909369489-550rcm3j803emjn0t8qaoolj33a3u9pl.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
